@@ -4,14 +4,14 @@
     <name>JBoss BPM - ActivityMonitor::Model</name>
     <groupId>org.jboss.bpm</groupId>
     <artifactId>activity-monitor-model</artifactId>
-    <version>1.2.3-SNAPSHOT</version>
+    <version>1.2.3.Final</version>
     <packaging>jar</packaging>
 
     <!-- Parent -->
     <parent>
         <groupId>org.jboss.bpm</groupId>
         <artifactId>activity-monitor-parent</artifactId>
-        <version>1.2.3-SNAPSHOT</version>
+        <version>1.2.3.Final</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
