@@ -80,6 +80,16 @@
 						<enabled>false</enabled>
 					</snapshots>
 				</repository>
+                <repository>
+                    <id>bertol-maven</id>
+                    <url>https://packagecloud.io/bertol/maven/maven2</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
             </repositories>
             <pluginRepositories>
                 <pluginRepository>

@@ -1,7 +1,17 @@
 language: java
 
+before_install:
+  - gem install package_cloud
+
 install:
   - mvn -s ./settings-jboss.xml install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   
 script:
   - mvn -s ./settings-jboss.xml clean install
+
+deploy:
+  provider: packagecloud
+  repository: bertol/maven
+  username: bertol
+  token: c8931f0eb1e0618d760d23ae88240597b3861ac974452973
+  #dist: "YOUR DIST" # like 'ubuntu/precise', or 'centos/5', if pushing deb or rpms
