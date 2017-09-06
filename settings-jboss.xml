@@ -1,4 +1,10 @@
 <settings>
+    <servers>
+      <server>
+        <id>packagecloud-bertol</id>
+        <password>c8931f0eb1e0618d760d23ae88240597b3861ac974452973</password>
+      </server>
+    </servers>
     <profiles>
         <profile>
             <id>jboss-public-repository-group</id>

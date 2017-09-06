@@ -280,6 +280,13 @@
             </plugins>
         </pluginManagement>
 
+      <extensions>
+        <extension>
+          <groupId>io.packagecloud.maven.wagon</groupId>
+          <artifactId>maven-packagecloud-wagon</artifactId>
+          <version>0.0.6</version>
+        </extension>
+      </extensions>
     </build>
 
     <!-- Reporting -->
@@ -347,18 +354,14 @@
 
     <!-- DistributionManagement -->
     <distributionManagement>
-        <repository>
-            <id>jboss-releases-repository</id>
-            <name>JBoss Releases Repository</name>
-            <url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
-        </repository>
-
-        <snapshotRepository>
-            <id>jboss-snapshots-repository</id>
-            <name>JBoss Snapshots Repository</name>
-            <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-
+      <repository>
+        <id>packagecloud-bertol</id>
+        <url>packagecloud+https://packagecloud.io/bertol/maven</url>
+      </repository>
+      <snapshotRepository>
+        <id>packagecloud-bertol</id>
+        <url>packagecloud+https://packagecloud.io/bertol/maven</url>
+      </snapshotRepository>
     </distributionManagement>
 
 </project>
