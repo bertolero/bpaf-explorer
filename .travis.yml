@@ -1,0 +1,10 @@
+language: java
+
+before_install:
+  - export MAVEN_OPTS="-Xmx2048m -XX:MaxPermSize=1024m $MAVEN_OPTS"
+
+install:
+  - mvn -s ./settings-jboss.xml install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  
+script:
+  - mvn -s ./settings-jboss.xml clean install
