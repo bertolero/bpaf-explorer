@@ -7,4 +7,5 @@ install:
   #- mvn -s ./settings-jboss.xml install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   
 script:
-  - mvn -s ./settings-jboss.xml clean deploy -DretryFailedDeploymentCount=10 -DdeployAtEnd=true 
+  - mvn -s ./settings-jboss.xml clean install 
+  - mvn -s ./settings-jboss.xml deploy -DretryFailedDeploymentCount=10 -DdeployAtEnd=true 

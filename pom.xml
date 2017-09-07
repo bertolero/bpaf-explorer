@@ -347,14 +347,14 @@
 
     <!-- DistributionManagement -->
     <distributionManagement>
-  <repository>
-    <id>packagecloud-bertol</id>
-    <url>packagecloud+https://packagecloud.io/bertol/maven/release</url>
-  </repository>
-  <snapshotRepository>
-    <id>packagecloud-bertol</id>
-    <url>packagecloud+https://packagecloud.io/bertol/maven/snapshot</url>
-  </snapshotRepository>
-</distributionManagement>
+      <repository>
+        <id>packagecloud-bertol</id>
+        <url>packagecloud+https://packagecloud.io/bertol/maven</url>
+      </repository>
+      <snapshotRepository>
+        <id>packagecloud-bertol</id>
+        <url>packagecloud+https://packagecloud.io/bertol/maven</url>
+      </snapshotRepository>
+    </distributionManagement>
 
 </project>
