@@ -1,11 +1,10 @@
 language: java
 
-before_install:
-  - gem install package_cloud
-
 install:
   #- mvn -s ./settings-jboss.xml install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   
 script:
   - mvn -s ./settings-jboss.xml clean install 
-  - mvn -s ./settings-jboss.xml deploy -DretryFailedDeploymentCount=10 -DdeployAtEnd=true 
+  - mvn -s ./settings-jboss.xml -pl . deploy -DretryFailedDeploymentCount=10 -DdeployAtEnd=true
+  - mvn -s ./settings-jboss.xml -pl model deploy -DretryFailedDeploymentCount=10 -DdeployAtEnd=true
+  - mvn -s ./settings-jboss.xml -pl gui/lib deploy -DretryFailedDeploymentCount=10 -DdeployAtEnd=true
