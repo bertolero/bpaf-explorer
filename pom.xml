@@ -79,7 +79,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <version.source.plugin>3.0.1</version.source.plugin>
+
         <gwt.version>2.0.4</gwt.version>
         <errai.version>1.1-Final</errai.version>
     </properties>
